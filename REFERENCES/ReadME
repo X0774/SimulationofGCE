@@ -1,1 +1,5 @@
-Upload of the references used for this small Problem
+#Upload of the references used for this small Problem
+
+Some mistakes are present in reference 2112.09699, explicitly:
+>Equation 2.2 is not the correct equation to fit with the parameters of Calore 2015; for that please see equation 5.3 of Calore 2015
+>When fitting AIC datas the fit parameter for the luminosity L0 is not 4.3e30, but 4.3e32; this can be seen by simulating figure 14b, or by comparing the normalized flux-to-luminosity converted distribution to the "wrong" fit function; notice that the mistake is consistent in the paper
