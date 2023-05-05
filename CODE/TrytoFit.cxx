@@ -12,8 +12,16 @@ f2.FixParameter(2,1.42);
 f2.FixParameter(3,2.63);
 gr->Fit("FitFuncCalore","R");
 
+TF1 f2("LogFunc","log10(exp(1))*exp(-pow(log10(x)-log10([0]),2)/(2*pow([1],2)))/(sqrt(2*3.14)*[1]*x)",1e28,1e34);  
+TGraphAsymmErrors* gr2 = new TGraphAsymmErrors("AIC.txt");
+f2.SetParameter(1,0.94);
+f2.SetParameter(0,4.3*1e32);
+gr2->Fit("LogFunc","R");
+f2.GetChisquare();   
+f2.GetProb();
+
 gPad->SetLogx();
 gPad->SetLogy();
-gr->Draw("ALP");
+gr2->Draw("ALP");
 f1.Draw();
 }
