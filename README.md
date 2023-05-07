@@ -40,11 +40,16 @@ Now it comes the hardest part, which is finding NGCE! I have used both the "simp
 
 
 AIC[Standard]: NGCE=3.64e5 
+
 AIC[Simplified]: NGCE=3.62e5, Nr=61.9
 
+
 GLC[Standard]: NGCE=667
+
 GLC[Simplified]: NGCE=665, Nr=309
 
+
 DISK[Standard]: NGCE=2.66e4 
+
 DISK[Simplified]: NGCE=2.65e4, Nr=133
 
