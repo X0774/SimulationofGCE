@@ -15,17 +15,19 @@ In order to correctly fit with the three methods expressed in figure 3 for Calor
 
 `TF1 f1("FitFunc","(x<[1]    ?   [0]*pow(x/[1],-[2])    :  [0]*pow(x/[1],-[3]) )",0.1,100);     //[0] is F0, [1] is Eb, [2] is n1, [3] is n2
 TGraphAsymmErrors* gr = new TGraphAsymmErrors("DATAS.txt");
-f1.SetParameter(1,2.06);
-f1.SetParameter(2,-0.41);
-f1.SetParameter(3,0.63);
+
 gr->Fit("FitFunc","R");`
 
 we obtain our Broken power Law Fit with every parameter kept free (I put as initial guesses the Calore 2015 values, but it doesn't really change much), while
 
 `TF1 f2("FitFuncCalore","(x<[1]    ?   x*x*[0]*pow(x/[1],-[2])    :  x*x*[0]*pow(x/[1],-[3]) )",0.1,100);     //[0] is F0, [1] is Eb, [2] is n1, [3] is n2
+
 f2.FixParameter(1,2.06);
+
 f2.FixParameter(2,1.42);
+
 f2.FixParameter(3,2.63);
+
 gr->Fit("FitFuncCalore","R");`
 
 can give us the parametrization with just one parameter free. Notice that for the Calore 2015 Fit we can't use the broken power law given in equation 2.2 and we have to instead refer to equation 5.3 of Calore et al.
