@@ -39,19 +39,19 @@ For this point we need to write three different functions; when it comes to GCL 
 Now it comes the hardest part, which is finding NGCE! I have used both the "simplified" sensitivity model given by them and the "real" sensitivity model, obtaining:
 
 
-AIC[Standard]: NGCE=3.64e5 
+-AIC[Standard]: NGCE=3.64e5 
 
-AIC[Simplified]: NGCE=3.62e5, Nr=61.9
-
-
-GLC[Standard]: NGCE=668
-
-GLC[Simplified]: NGCE=664, Nr=309
+-AIC[Simplified]: NGCE=3.62e5, Nr=61.9
 
 
-DISK[Standard]: NGCE=2.66e4 
+-GLC[Standard]: NGCE=668
 
-DISK[Simplified]: NGCE=2.65e4, Nr=133
+-GLC[Simplified]: NGCE=664, Nr=309
+
+
+-DISK[Standard]: NGCE=2.66e4 
+
+-DISK[Simplified]: NGCE=2.65e4, Nr=133
 
 Note that the integration is very sensible to the integration rule and the working precision, as it may happen that the numerical integral is a sum of numbers so small that some are approximated to 0; even analytic integration is not safe from this issue, as the coefficients may be approximated.
 
