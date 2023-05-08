@@ -44,7 +44,7 @@ AIC[Standard]: NGCE=3.64e5
 AIC[Simplified]: NGCE=3.62e5, Nr=61.9
 
 
-GLC[Standard]: NGCE=667
+GLC[Standard]: NGCE=668
 
 GLC[Simplified]: NGCE=665, Nr=309
 
@@ -53,3 +53,6 @@ DISK[Standard]: NGCE=2.66e4
 
 DISK[Simplified]: NGCE=2.65e4, Nr=133
 
+Note that the integration is very sensible to the integration rule and the working precision, as it may happen that the numerical integral is a sum of numbers so small that some are approximated to 0; even analytic integration is not safe from this issue, as the coefficients may be approximated.
+
+Note also that the smoothed sensitivity method does not change NGCE, so I didn't work with that.
