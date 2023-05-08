@@ -46,7 +46,7 @@ AIC[Simplified]: NGCE=3.62e5, Nr=61.9
 
 GLC[Standard]: NGCE=668
 
-GLC[Simplified]: NGCE=665, Nr=309
+GLC[Simplified]: NGCE=664, Nr=309
 
 
 DISK[Standard]: NGCE=2.66e4 
