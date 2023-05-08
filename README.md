@@ -53,3 +53,5 @@ Now it comes the hardest part, which is finding NGCE! I have used both the "simp
 Note that the integration is very sensible to the integration rule and the working precision, as it may happen that the numerical integral is a sum of numbers so small that some are approximated to 0; even analytic integration is not safe from this issue, as the coefficients may be approximated.
 
 Note also that the smoothed sensitivity method does not change NGCE, so I didn't work with that.
+
+With the simplified model I have also obtained Rr for AIC (0.078), for GLC (0.91) and for DISK (0.22) by computing Lr and dividing over FGCE's associated luminosity (for the associated luminosity-Flux conversion please check the code and Appendix D of the reference paper).
