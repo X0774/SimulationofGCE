@@ -48,7 +48,7 @@ Now it comes the hardest part, which is finding NGCE! I have used both the "simp
 
 
 - DISK[Standard]: NGCE=2.66e4 
-- DISK[Simplified]: NGCE=2.65e4, Nr=133
+- DISK[Simplified]: NGCE=2.64e4, Nr=133
 
 Note that the integration is very sensible to the integration rule and the working precision, as it may happen that the numerical integral is a sum of numbers so small that some are approximated to 0; even analytic integration is not safe from this issue, as the coefficients may be approximated.
 
